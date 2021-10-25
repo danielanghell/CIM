@@ -6,13 +6,13 @@ if __name__ == "__main__":
 else:
 
     #sum
-    def method1(number1, number2):
-        sum=number1+number2
+    def sum(number1, number2):
+        sum = number1 + number2
         return sum
 
     #rest
-    def method2(number1, number2):
-        rest=number1%number2
+    def remainder(number1, number2):
+        rest = number1 % number2
         return rest
 
     #read from a file
@@ -22,13 +22,13 @@ else:
 
 
     #verify a string
-    def method4(phone_number):
+    def phoneValidator(phone_number):
         phone_number_parsed=phonenumbers.parse(phone_number)
         return phonenumbers.is_possible_number(phone_number_parsed)
 
 
     #working with values from a defined range
-    def method5(number):
+    def rangedListFabric(number):
         list = [*range(number)]
         for i in list:
             list[i] = list[i]+10
@@ -73,9 +73,9 @@ else:
 
     #generate random list and sort it with quicksort - no shit sherlock
     def random_generator_and_quicksort(argument):
-        list = random.sample(range(10,50),argument)
+        list = random.sample(range(10, 50), argument)
         return quick_sort(0, len(list)-1, list)
 
     def random_list_generator(argument):
-        list = random.sample(range(10,100),argument)
+        list = random.sample(range(10, 100), argument)
         return list
