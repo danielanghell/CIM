@@ -18,18 +18,21 @@ if __name__ == "__main__":
 
         switcher = {
             1: Methods.sum(122, 2),       #return int method
-            2: Methods.remainder(11, 5),       #return double method
-            3: Methods.method3(),           #read from a file and display   TODO - sum numbers from a file
-            4: Methods.phoneValidator("+40 712312315"),        #parsing
-            5: Methods.rangedListFabric(4),                      #works with values from a range
-            6: Methods.selection_sort(5),                       #poor method of sorting
-            7: Methods.random_generator_and_quicksort(6),                     #better method to sort
-            8: 'processing time-method8',               #writes 2kk values in a file -> takes some time or processing
-            9: Methods.random_list_generator(10),               #method that obtains a random list
-            10: Complex.sumComplex_numbers(),                                #method that sums up 2 Complex numbers
-            11: Complex.subComplex_numbers(),                              #method that substracts 2 Complex numbers
-            12: Complex.modulusComplex_numbers(),                             #method that calculates modulus of a Complex number
-            13: 'est'
+            2: Methods.remainder(11, 12),       #return double method
+            3: Methods.difference(5, 2),        #return difference
+            4: Methods.method3(),           #read from a file and display   TODO - sum numbers from a file
+            5: Methods.phoneValidator("+40712312315"),        #parsing
+            6: Methods.rangedListFabric(4),                      #works with values from a range
+            7: Methods.selection_sort(5),                       #poor method of sorting
+            8: Methods.random_generator_and_quicksort(6),                     #better method to sort
+            9: 'processing time-method8',               #writes 2kk values in a file -> takes some time or processing
+            10: Methods.random_list_generator(10),               #method that obtains a random list
+            11: Complex.sumComplex_numbers(Complex.Complex(30,-5), Complex.Complex(2, 10)),                                #method that sums up 2 Complex numbers
+            12: Complex.subComplex_numbers(Complex.Complex(2,10), Complex.Complex(4,-10)),                              #method that substracts 2 Complex numbers
+            13: Complex.modulusComplex_numbers(),                             #method that calculates modulus of a Complex number
+            14: Methods.timer_function(20),
+            15: Methods.division(10, 3),
+            16: 'test'
 
         }
         func = switcher.get(argument, "Invalid choice")

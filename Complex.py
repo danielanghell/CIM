@@ -1,4 +1,5 @@
 import math
+import main
 
 if __name__ == "__main__":
     print("executed as main")
@@ -44,7 +45,7 @@ else:
         def modulus(self):
             real = self.real
             img = self.img
-            return int(math.sqrt(pow(real,2) + pow(img, 2)))
+            return math.floor((math.sqrt(pow(real,2) + pow(img, 2))))
 
 
     #fabric of Complex numbers
@@ -53,16 +54,20 @@ else:
         return obj
 
             # add Complex numbers
-    def sumComplex_numbers():
-        obj1 = complex_class_factoring(3, -5)
-        obj2 = complex_class_factoring(2, 10)
+    def sumComplex_numbers(self, other):
+        # obj1 = complex_class_factoring(3, -5)
+        # obj2 = complex_class_factoring(2, 10)
+        obj1 = self
+        obj2 = other
         return (obj1 + obj2).fullnumber()
 
 
     #substract Complex numbers
-    def subComplex_numbers():
-        obj1 = complex_class_factoring(2,10)
-        obj2 = complex_class_factoring(4,-10)
+    def subComplex_numbers(self, other):
+        # obj1 = complex_class_factoring(2,10)
+        # obj2 = complex_class_factoring(4,-10)
+        obj1 = self
+        obj2 = other
         return (obj1 - obj2).fullnumber()
 
     #modulus of Complex numbers
